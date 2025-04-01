@@ -1,13 +1,72 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parcel Vanilla App</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>Parcel Vanilla App</h1>
-    <p>Edit <code>src/index.html</code> to get started!</p>
-  </body>
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portada</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>A Mossegades pel Món</h1>
+    <h4>Viatjar i tastar: dos plaers en un</h4>
+    <div class="menu-principal">
+      <nav>
+        <ul>
+          <li class="selected"><a href="index.html">Inici</a></li>
+          <li><a href="categoria.html">Categoria</a></li>
+          <li><a href="link.html">Enllaços</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenidor-principal">
+    <section>
+      <h2>Som apassionats dels viatges i de la cuina</h2>
+      <p>
+        Benvinguts al nostre racó digital, un espai que neix de la nostra passió compartida per dues grans aficions: viatjar i cuinar. Aquesta plataforma vol ser molt més que un simple lloc web. És un diari obert d’experiències, un receptari viu, i una finestra al món a través de la gastronomia.
+      </p>
+
+      <p>
+        Tot va començar amb un viatge improvisat a Andalusia. Ens vam perdre pels carrers de Sevilla, vam descobrir mercats locals plens d’olors, sabors i colors, i vam tastar les millors tapes que havíem provat mai. Aquell viatge va ser el detonant d’una sèrie d’aventures culinàries per tot el territori espanyol. Hem explorat els sabors potents del País Basc, els productes de proximitat de Catalunya, els guisats contundents de Castella i els arrossos saborosos del País Valencià. Cada lloc ha aportat un gra de sorra a la nostra manera d'entendre la cuina i la cultura.
+      </p>
+
+      <img class="img-gran" src="img/presentacio.jpg" alt="Plats castellans"/>
+
+      <p>
+        Però no ens hem aturat aquí. França ens ha captivat amb la seva elegància gastronòmica. A la Provença, vam aprendre a valorar els ingredients senzills i frescos, com l’oli d’oliva verge, l’all i les herbes aromàtiques. A la Bretanya, ens vam enamorar de les crêpes, els mariscs i la sidra. A París, vam tenir el privilegi de dinar en petits bistrós que amagaven grans tresors culinaris, servits sempre amb passió i orgull.
+      </p>
+
+      <img class="img-gran" src="img/brasserie.jpg" alt="Bistró francès"/>
+
+      <p>
+        El nostre objectiu amb aquesta web és compartir tot això amb vosaltres: receptes que hem après, històries que hem viscut i llocs que us recomanem visitar si també estimeu la cuina i la descoberta cultural. Aquí hi trobareu receptes amb història, guies de viatge gastronòmic, fotografies reals dels nostres plats i racons preferits, i suggeriments per viure l’experiència amb els cinc sentits.
+      </p>
+
+      <p>
+        Creiem que cuinar és una forma de viatjar sense moure’s de casa, i que viatjar és una manera d’aprendre a cuinar d’una forma més conscient, respectuosa i creativa. És per això que us convidem a explorar aquesta plataforma, a provar receptes, a perdre-us per les nostres cròniques i a descobrir la màgia que es pot trobar al plat més senzill.
+      </p>
+
+      <p>
+        Gràcies per acompanyar-nos en aquest viatge. Bon profit i bon camí!
+      </p>
+    </section>
+  </main>
+  
+  <button id="fletxa-amunt" aria-label="Torna a l'inici">
+    <i class="fa-solid fa-arrow-up icona-blanca" title="Scroll cap amunt"></i>
+  </button>
+
+  <footer class="serif-off">
+    <p id="data-avui"></p>
+    <p>
+      <abbr title="Universitat Oberta de Catalunya">UOC</abbr>, 2025. Èric Bleda Bejar</p>
+    <p>
+      Assignatura  d'Eines <abbr title="HyperText Markup Language">HTML</abbr> i <abbr title="Cascading Style Sheets">CSS</abbr>
+    </p>
+  </footer>
+
+  <script type="module" src="app.ts"></script>
+</body>
 </html>

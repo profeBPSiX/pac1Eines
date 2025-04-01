@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categoria</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>A Mossegades pel Món</h1>
+    <h4>Viatjar i tastar: dos plaers en un</h4>
+    <div class="menu-principal">
+      <nav>
+        <ul>
+          <li><a href="index.html">Inici</a></li>
+          <li class="selected"><a href="categoria.html">Categoria</a></li>
+          <li><a href="link.html">Enllaços</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenidor-principal">
+    <h2>Descobreix els sabors que hem conegut</h2>
+    <section class="panell">
+      <div class="plat">
+        <img src="img/paella.jpg" alt="Paella Valenciana">
+        <div class="descripcio-plat">
+          <h3>Paella Valenciana</h3>
+          <p>Icona de la cuina mediterrània: arròs, pollastre, conill i verdures.</p>
+          <a class="active" href="detall1.html">Veure més</a>
+        </div>
+      </div>
+      <div class="plat">
+        <img src="img/ratatouille.jpg" alt="Ratatouille Provençal">
+        <div class="descripcio-plat">
+          <h3>Ratatouille Provençal</h3>
+          <p>Un plat vegetal típic del sud de França, ple de color i sabor fresc.</p>
+          <a class="active" href="detall2.html">Veure més</a>
+        </div>
+      </div>
+      <div class="plat">
+        <img src="img/tapas.jpg" alt="Tapes de Sevilla">
+        <div class="descripcio-plat">
+          <h3>Tapes de Sevilla</h3>
+          <p>Un tastet de la cultura andalusa amb sabors intensos i tradicionals.</p>
+          <a class="inactive" href="index.html">Veure més</a>
+        </div>
+      </div>
+      <div class="plat">
+        <img src="img/crepes.jpg" alt="Crêpes Bretonnes">
+        <div class="descripcio-plat">
+          <h3>Crêpes Bretonnes</h3>
+          <p>Dolces o salades, les crêpes franceses són un autèntic plaer de la Bretanya.</p>
+          <a class="inactive" href="index.html">Veure més</a>
+        </div>
+      </div>
+      <div class="plat">
+        <img src="img/patumaca.jpg" alt="Pa amb tomàquet">
+        <div class="descripcio-plat">
+          <h3>Pa amb tomàquet</h3>
+          <p>El més icònic dels entrants catalans. Senzill, fresc i essencial.</p>
+          <a class="inactive" href="index.html">Veure més</a>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+  <button id="fletxa-amunt" aria-label="Torna a l'inici">
+    <i class="fa-solid fa-arrow-up icona-blanca" title="Scroll cap amunt"></i>
+  </button>
+  <footer class="serif-off">
+    <p>
+      <abbr title="Universitat Oberta de Catalunya">UOC</abbr>, 2025. Èric Bleda Bejar</p>
+    <p>
+      Assignatura  d'Eines <abbr title="HyperText Markup Language">HTML</abbr> i <abbr title="Cascading Style Sheets">CSS</abbr>
+    </p>
+  </footer>
+  <script type="module" src="app.ts"></script>
+</body>
+</html>
