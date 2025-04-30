@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portada</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="img-pac2/icona-64.png">
 </head>
 <body>
   <header>
-    <h1>A Mossegades pel Món</h1>
-    <h4>Viatjar i tastar: dos plaers en un</h4>
+    <div class="title">A Mossegades pel Món</div>
+    <div class="subtitle">Viatjar i tastar: dos plaers en un</div>
     <div class="menu-principal">
       <nav>
         <ul>
@@ -23,7 +24,17 @@
 
   <main id="contenidor-principal">
     <section>
-      <h2>Som apassionats dels viatges i de la cuina</h2>
+      <div class="title-container">
+        <svg id="plat1" class="plat-svg" aria-hidden="true" focusable="false" width="75" height="75" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="45" fill="white" stroke="grey" stroke-width="2" />
+          <circle cx="50" cy="50" r="30" fill="#f2f2f2" />
+        </svg>
+        <h1>Som apassionats dels viatges i de la cuina</h1>
+        <svg id="plat2" class="plat-svg" aria-hidden="true" focusable="false" width="75" height="75" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="45" fill="white" stroke="grey" stroke-width="2" />
+          <circle cx="50" cy="50" r="30" fill="#f2f2f2" />
+        </svg>
+      </div>
       <p>
         Benvinguts al nostre racó digital, un espai que neix de la nostra passió compartida per dues grans aficions: viatjar i cuinar. Aquesta plataforma vol ser molt més que un simple lloc web. És un diari obert d’experiències, un receptari viu, i una finestra al món a través de la gastronomia.
       </p>
@@ -32,18 +43,42 @@
         Tot va començar amb un viatge improvisat a Andalusia. Ens vam perdre pels carrers de Sevilla, vam descobrir mercats locals plens d’olors, sabors i colors, i vam tastar les millors tapes que havíem provat mai. Aquell viatge va ser el detonant d’una sèrie d’aventures culinàries per tot el territori espanyol. Hem explorat els sabors potents del País Basc, els productes de proximitat de Catalunya, els guisats contundents de Castella i els arrossos saborosos del País Valencià. Cada lloc ha aportat un gra de sorra a la nostra manera d'entendre la cuina i la cultura.
       </p>
 
-      <img class="img-gran" src="img/presentacio.jpg" alt="Plats castellans">
+      <img
+        class="img-presentacio"
+        srcset="
+          img-pac2/presentacio-300.webp 450w,
+          img-pac2/presentacio-500.webp 880w,
+          img-pac2/presentacio-800.webp 2000w"
+        sizes="(max-width: 450px) 100vw, (max-width: 880px) 90vw, 80vw"
+        src="img-pac2/presentacio-h.webp"
+        alt="Diferents plats castellans típics"
+      >
+
 
       <p>
         Però no ens hem aturat aquí. França ens ha captivat amb la seva elegància gastronòmica. A la Provença, vam aprendre a valorar els ingredients senzills i frescos, com l’oli d’oliva verge, l’all i les herbes aromàtiques. A la Bretanya, ens vam enamorar de les crêpes, els mariscs i la sidra. A París, vam tenir el privilegi de dinar en petits bistrós que amagaven grans tresors culinaris, servits sempre amb passió i orgull.
       </p>
 
-      <img class="img-gran" src="img/brasserie.jpg" alt="Bistró francès">
-
+      <picture>
+        <source media="(max-width: 450px)" srcset="img-pac2/brasserie-l.webp">
+        <source media="(max-width: 880px)" srcset="img-pac2/brasserie-m.webp">
+        <img src="img-pac2/brasserie-h.webp" alt="Bistró francès">
+      </picture>
+      
       <p>
         El nostre objectiu amb aquesta web és compartir tot això amb vosaltres: receptes que hem après, històries que hem viscut i llocs que us recomanem visitar si també estimeu la cuina i la descoberta cultural. Aquí hi trobareu receptes amb història, guies de viatge gastronòmic, fotografies reals dels nostres plats i racons preferits, i suggeriments per viure l’experiència amb els cinc sentits.
       </p>
 
+
+      <img
+        class="img-mon"
+        srcset="
+          img-pac2/mon-200.webp 1x,
+          img-pac2/mon-300.webp 2x,
+          img-pac2/mon-400.webp 3x"
+        src="img-pac2/mon.webp"
+        alt="Icona del Mon, fent referència a l'icona de la plataforma web"
+      >
       <p>
         Creiem que cuinar és una forma de viatjar sense moure’s de casa, i que viatjar és una manera d’aprendre a cuinar d’una forma més conscient, respectuosa i creativa. És per això que us convidem a explorar aquesta plataforma, a provar receptes, a perdre-us per les nostres cròniques i a descobrir la màgia que es pot trobar al plat més senzill.
       </p>

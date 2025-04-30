@@ -10,12 +10,6 @@
     --NoSerif: Verdana, Geneva, sans-serif;
 }
 
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-  }
-}
-
 body {
   font-family: var(--Serif);
   margin: 0;
@@ -29,7 +23,9 @@ header {
   background-color: var(--MoratFosc);
   color: var(--BlancPur);
   padding: 10px;
+  clip-path: url(#clip-forquilla);
 }
+
 
 /*Enllaços menu principal*/
 .menu-principal nav ul {
@@ -61,7 +57,8 @@ a {
   text-decoration: none;
 }
 
-h1 {
+.title {
+  margin-top: 30px;
   font-family: var(--NoSerif);
   font-size: 48px;
   text-align: center;
@@ -70,15 +67,19 @@ h1 {
   margin-bottom: 10px;
 }
 
-h2 {
+.subtitle {
   font-family: var(--NoSerif);
-  font-size: 30px;
+  margin: 0px;
+  font-size: 20px;
   font-weight: 700;
 }
 
-h4 {
+h1 {
   font-family: var(--NoSerif);
-  margin: 0px;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 p {
@@ -107,15 +108,28 @@ footer {
   left: 0;
 }
 
-h2 {
-  text-align: center;
-  margin-bottom: 2rem;
+img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
+.img-presentacio {
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.img-mon {
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  clip-path: circle(44.6% at 50% 50%);
+}
 
 /*Categories: panell + plats*/
-
 
 .panell {
   display: grid;
@@ -151,9 +165,11 @@ h2 {
   align-items: center;
 }
 
-.descripcio-plat h3 {
+
+.descripcio-plat h2 {
   margin: 0 0 0.5rem;
   text-align: center;
+  font-size: 18px;
 }
 
 .descripcio-plat p {
@@ -252,4 +268,80 @@ a:hover {
 .icona-blanca {
   color: var(--BlancPur);
   font-size: 40px;
+}
+
+
+/* Animació plat SVG */
+
+.title-container {
+  display:inline-flex;
+}
+
+#plat1 {
+  margin-right: 10px;
+}
+
+#plat2 {
+  margin-left: 10px;
+}
+
+@keyframes bategar {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.plat-svg {
+  min-width: 55px;
+  display: block;
+  margin-bottom: auto;
+  margin-top: auto;
+  animation: bategar 2s infinite alternate;
+}
+
+
+/* Responsive - Tractaments específics */
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 580px) {
+  .nota .title-nota {
+    display:none;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    line-height: 1.4;
+  }
+  .title {
+    font-size: 26px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  .subtitle {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .nota p {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  .plat-svg {
+    display:none;
+  }
+  
 }

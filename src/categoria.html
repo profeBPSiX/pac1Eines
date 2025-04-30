@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Categoria</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="img-pac2/icona-64.png">
 </head>
 <body>
   <header>
-    <h1>A Mossegades pel Món</h1>
-    <h4>Viatjar i tastar: dos plaers en un</h4>
+    <div class="title">A Mossegades pel Món</div>
+    <div class="subtitle">Viatjar i tastar: dos plaers en un</div>
     <div class="menu-principal">
       <nav>
         <ul>
@@ -22,44 +23,79 @@
   </header>
 
   <main id="contenidor-principal">
-    <h2>Descobreix els sabors que hem conegut</h2>
+    <h1>Descobreix els sabors que hem conegut</h1>
     <section class="panell">
       <div class="plat">
-        <img src="img/paella.jpg" alt="Paella Valenciana">
+        <img
+          srcset="
+            img-pac2/paella-l.webp 1x,
+            img-pac2/paella-m.webp 2x,
+            img-pac2/paella-h.webp 3x"
+          src="img-pac2/paella.webp"
+          alt="Paella Valenciana"
+        >
         <div class="descripcio-plat">
-          <h3>Paella Valenciana</h3>
+          <h2>Paella Valenciana</h2>
           <p>Icona de la cuina mediterrània: arròs, pollastre, conill i verdures.</p>
           <a class="active" href="detall1.html">Veure més</a>
         </div>
       </div>
       <div class="plat">
-        <img src="img/ratatouille.jpg" alt="Ratatouille Provençal">
+        <img
+          srcset="
+            img-pac2/ratatouille-l.webp 1x,
+            img-pac2/ratatouille-m.webp 2x,
+            img-pac2/ratatouille-h.webp 3x"
+          src="img-pac2/ratatouille.webp"
+          alt="Ratatouille Provençal"
+        >
         <div class="descripcio-plat">
-          <h3>Ratatouille Provençal</h3>
+          <h2>Ratatouille Provençal</h2>
           <p>Un plat vegetal típic del sud de França, ple de color i sabor fresc.</p>
           <a class="active" href="detall2.html">Veure més</a>
         </div>
       </div>
       <div class="plat">
-        <img src="img/tapas.jpg" alt="Tapes de Sevilla">
+        <img
+          srcset="
+            img-pac2/tapas-l.webp 1x,
+            img-pac2/tapas-m.webp 2x,
+            img-pac2/tapas-h.webp 3x"
+          src="img-pac2/tapas.webp"
+          alt="Tapes de Sevilla"
+        >
         <div class="descripcio-plat">
-          <h3>Tapes de Sevilla</h3>
+          <h2>Tapes de Sevilla</h2>
           <p>Un tastet de la cultura andalusa amb sabors intensos i tradicionals.</p>
           <a class="inactive" href="index.html">Veure més</a>
         </div>
       </div>
       <div class="plat">
-        <img src="img/crepes.jpg" alt="Crêpes Bretonnes">
+        <img
+          srcset="
+            img-pac2/crepes-l.webp 1x,
+            img-pac2/crepes-m.webp 2x,
+            img-pac2/crepes-h.webp 3x"
+          src="img-pac2/crepes.webp"
+          alt="Crêpes Bretonnes"
+        >
         <div class="descripcio-plat">
-          <h3>Crêpes Bretonnes</h3>
-          <p>Dolces o salades, les crêpes franceses són un autèntic plaer de la Bretanya.</p>
+          <h2 lang="fr">Crêpes Bretonnes</h2>
+          <p>Dolces o salades, les <span lang="fr">crêpes</span> franceses són un autèntic plaer de la Bretanya.</p>
           <a class="inactive" href="index.html">Veure més</a>
         </div>
       </div>
       <div class="plat">
-        <img src="img/patumaca.jpg" alt="Pa amb tomàquet">
+        <img
+          srcset="
+            img-pac2/patumaca-l.webp 1x,
+            img-pac2/patumaca-m.webp 2x,
+            img-pac2/patumaca-h.webp 3x"
+          src="img-pac2/patumaca.webp"
+          alt="Pa amb tomàquet"
+        >
         <div class="descripcio-plat">
-          <h3>Pa amb tomàquet</h3>
+          <h2>Pa amb tomàquet</h2>
           <p>El més icònic dels entrants catalans. Senzill, fresc i essencial.</p>
           <a class="inactive" href="index.html">Veure més</a>
         </div>
@@ -71,6 +107,7 @@
     <i class="fa-solid fa-arrow-up icona-blanca" title="Scroll cap amunt"></i>
   </button>
   <footer class="serif-off">
+    <p id="data-avui"></p>
     <p>
       <abbr title="Universitat Oberta de Catalunya">UOC</abbr>, 2025. Èric Bleda Bejar</p>
     <p>
